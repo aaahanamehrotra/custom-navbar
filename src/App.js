@@ -20,7 +20,7 @@ function App() {
       let newword = word
       let y = -1
       while (x < newword.length-1 && x !== -1){
-        x = newword.indexOf(e.target.value) == -1 ? word.length-1 : newword.indexOf(e.target.value)
+        x = newword.indexOf(e.target.value) === -1 ? word.length-1 : newword.indexOf(e.target.value)
         newword = newword.slice(x+1, word.length)
         y += word.slice(0, x+1).length
         console.log(x, newword, y);
